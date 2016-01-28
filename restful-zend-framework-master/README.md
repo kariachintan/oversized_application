@@ -3,8 +3,6 @@
 This extension for Zend Framework, allows to create RESTful Controllers with ease.
 please keep in mind that these instructions are general and you should probably customize the code to fit your needs.
 
-for a working example please refer to [github.com/ahmadnassri/restful-zend-framework-example](https://github.com/ahmadnassri/restful-zend-framework-example)
-
 ## Assumptions
 * you are building a mixed application (regular ZF Controllers + RESTful controllers)
 * your controllers can be a a mix of regular controllers and RESTful controllers or a hybrid!
@@ -20,8 +18,7 @@ In this particular example, I'm using a separate module "Api" that is purely use
 3. modify **application/Bootstrap.php**.
 4. modify your RESTful module Bootstrap ex: **application/modules/api/Bootstrap.php**.
 5. create Controllers as usual, just make sure they extends **REST_Controller**.
-6. check https://github.com/ahmadnassri/restful-zend-framework-example for examples.
-7. reccomended: use the Api_ErrorController provided in the example above, modify to your needs.
+6. reccomended: use the Api_ErrorController provided in the example above, modify to your needs.
 
 ### application.ini:
 
@@ -117,39 +114,5 @@ class App_Controller_Plugin_Errors extends Zend_Controller_Plugin_Abstract
 }
 ```
 
-## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ahmadnassri/restful-zend-framework/issues/new).
 
-## Contributing
-
-Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests.
-
-Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
-
-## Support
-
-Donations are welcome to help support the continuous development of this project.
-
-[![Gratipay][gratipay-image]][gratipay-url]
-[![PayPal][paypal-image]][paypal-url]
-[![Flattr][flattr-image]][flattr-url]
-[![Bitcoin][bitcoin-image]][bitcoin-url]
-
-## License
-
-[MIT](LICENSE) &copy; [Ahmad Nassri](https://www.ahmadnassri.com)
-
-[gratipay-url]: https://www.gratipay.com/ahmadnassri/
-[gratipay-image]: https://img.shields.io/gratipay/ahmadnassri.svg?style=flat-square
-
-[paypal-url]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS&on0=project&os0=restful-zend-framework
-[paypal-image]: http://img.shields.io/badge/paypal-donate-green.svg?style=flat-square
-
-[flattr-url]: https://flattr.com/submit/auto?user_id=ahmadnassri&url=https://github.com/ahmadnassri/restful-zend-framework&title=restful-zend-framework&language=&tags=github&category=software
-[flattr-image]: http://img.shields.io/badge/flattr-donate-green.svg?style=flat-square
-
-[bitcoin-image]: http://img.shields.io/badge/bitcoin-1Nb46sZRVG3or7pNaDjthcGJpWhvoPpCxy-green.svg?style=flat-square
-[bitcoin-url]: https://www.coinbase.com/checkouts/ae383ae6bb931a2fa5ad11cec115191e?name=restful-zend-framework
